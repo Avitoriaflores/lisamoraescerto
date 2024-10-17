@@ -3,166 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Promoções Lisa Moraes Centro de Beleza</title>
+  <title>Promoções Outubro Rosa - Lisa Moraes Centro de Beleza</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://static.elfsight.com/platform/platform.js" async></script>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
     }
-    .main-bg {
-      background-color: #f5f5f5;
-    }
-    .primary-text {
-      color: #333333;
-    }
-    .accent-color {
-      color: #5a5a5a;
-    }
-    .button {
-      background-color: #333333;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 24px;
-      font-weight: bold;
-    }
-    .button:hover {
-      background-color: #5a5a5a;
-    }
     .accordion {
       cursor: pointer;
-      background-color: #f5f5f5;
       padding: 18px;
       text-align: left;
       border: none;
       outline: none;
+      background-color: #f7f7f7;
+      font-weight: bold;
       transition: background-color 0.4s ease;
     }
     .accordion:hover {
       background-color: #e2e2e2;
     }
-    .accordion:after {
-      content: '\\002B';
-      font-size: 1.5rem;
-      float: right;
-    }
-    .accordion.active:after {
-      content: '\\2212';
-    }
     .panel {
+      padding: 0 18px;
       display: none;
       background-color: white;
       overflow: hidden;
-      padding: 0 18px;
+    }
+    .panel.show {
+      display: block;
     }
   </style>
 </head>
-<body class="main-bg text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
-  <!-- Hero Section -->
-  <section class="py-16 text-center primary-text">
-    <h1 class="text-5xl font-bold">Promoções Exclusivas - Lisa Moraes Centro de Beleza</h1>
-    <p class="mt-4 text-xl">Cuide de sua beleza e autoestima com as melhores ofertas.</p>
-    <a href="#promocoes" class="mt-6 inline-block button">Ver Ofertas</a>
+  <!-- Cabeçalho (Hero Section) -->
+  <section class="bg-pink-500 text-white py-16 text-center">
+    <h1 class="text-4xl font-bold">Promoções de Outubro Rosa - Lisa Moraes Centro de Beleza</h1>
+    <p class="mt-4 text-xl">"Cuide de sua beleza e autoestima com as ofertas especiais do mês de Outubro."</p>
+    <a href="#promocoes" class="mt-6 inline-block bg-white text-pink-500 px-6 py-3 rounded-lg text-lg font-semibold">Aproveite as Ofertas</a>
   </section>
 
-  <!-- Promoções Section -->
-  <section id="promocoes" class="py-12 px-4 bg-white">
-    <h2 class="text-3xl font-bold text-center accent-color mb-8">Promoções do Mês</h2>
+  <!-- Promoções do Mês (Outubro Rosa) -->
+  <section id="promocoes" class="py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Promoções do Mês (Outubro Rosa)</h2>
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Promo Item 1 -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center">
-        <img src="https://ibb.co/zbBF4Vb" alt="Botox Capilar + Ozonioterapia" class="w-full h-64 object-cover rounded-md">
-        <h3 class="mt-4 text-2xl font-bold accent-color">Botox Capilar + Ozonioterapia</h3>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://ibb.co/zbBF4Vb" alt="Botox Capilar + Ozonioterapia" class="w-full h-48 object-cover rounded-md">
+        <h3 class="mt-4 text-2xl font-bold">Botox Capilar + Ozonioterapia</h3>
         <p class="mt-2 text-lg line-through text-gray-500">De: R$ 150,00</p>
-        <p class="text-lg accent-color font-bold">Por: R$ 79,90</p>
-        <p class="mt-2 text-sm text-gray-500">Pagamento via Pix disponível</p>
+        <p class="text-lg text-pink-600">Por: R$ 79,90</p>
       </div>
-      <!-- Outros itens -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://ibb.co/XVg60bm" alt="Manicure + Pedicure + Nutrição Loucas e Lisas" class="w-full h-48 object-cover rounded-md">
+        <h3 class="mt-4 text-2xl font-bold">Manicure + Pedicure + Nutrição Loucas e Lisas</h3>
+        <p class="text-lg text-pink-600">R$ 114,90</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="https://ibb.co/P5xLNJG" alt="Semidefinitiva Orgânica" class="w-full h-48 object-cover rounded-md">
+        <h3 class="mt-4 text-2xl font-bold">Semidefinitiva Orgânica</h3>
+        <p class="mt-2 text-lg line-through text-gray-500">De: R$ 250,00</p>
+        <p class="text-lg text-pink-600">Por: R$ 149,90</p>
+      </div>
+      <!-- Continue listando as promoções... -->
     </div>
   </section>
 
-  <!-- Sobre Lisa Moraes Section -->
+  <!-- Sobre Lisa Moraes -->
   <section class="py-12 px-4 bg-white">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-center accent-color mb-8">Sobre Lisa Moraes</h2>
+      <h2 class="text-3xl font-bold text-center mb-8">Sobre Lisa Moraes</h2>
       <div class="flex flex-col md:flex-row items-center">
         <img src="https://ibb.co/1JcHW9R" alt="Lisa Moraes" class="w-48 h-48 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
-        <p class="text-lg primary-text">Com mais de 23 anos de experiência, Lisa Moraes é uma cabeleireira dedicada à elevação da autoestima e à beleza de suas clientes...</p>
+        <p class="text-lg">"Com mais de 23 anos de experiência no ramo da beleza, Lisa Moraes é uma cabeleireira reconhecida por sua dedicação em elevar a autoestima e cuidar da saúde e beleza de suas clientes. Cada atendimento é pensado para trazer o melhor resultado e uma experiência única."</p>
       </div>
     </div>
   </section>
 
-  <!-- Serviços Section -->
+  <!-- Serviços Oferecidos -->
   <section class="py-12 px-4 bg-gray-100">
-    <h2 class="text-3xl font-bold text-center accent-color mb-8">Serviços Oferecidos</h2>
+    <h2 class="text-3xl font-bold text-center mb-8">Serviços Oferecidos</h2>
     <div class="max-w-4xl mx-auto">
-
       <button class="accordion">Estética Capilar</button>
       <div class="panel">
-        <ul class="list-disc list-inside primary-text py-4">
-          <li class="text-lg"><strong>Corte simples:</strong> Renovação do visual ou manutenção do comprimento.</li>
-          <li class="text-lg"><strong>Corte com escova:</strong> Finalizado com uma escova, dando forma e modelagem aos fios.</li>
-          <li class="text-lg"><strong>Corte bordado:</strong> Técnica que remove pontas duplas sem alterar o comprimento dos fios.</li>
+        <ul class="list-disc list-inside py-4">
+          <li><strong>Corte simples:</strong> Renovação do visual ou manutenção do comprimento.</li>
+          <li><strong>Corte com escova:</strong> Finalizado com uma escova, dando forma e modelagem aos fios.</li>
+          <li><strong>Corte bordado:</strong> Técnica que remove pontas duplas sem alterar o comprimento dos fios.</li>
         </ul>
       </div>
 
       <button class="accordion">Escovas e Tratamentos Alisantes</button>
       <div class="panel">
-        <ul class="list-disc list-inside primary-text py-4">
-          <li class="text-lg"><strong>Escova Modelada:</strong> Define e modela os fios, criando volume e ondulações conforme desejado.</li>
-          <li class="text-lg"><strong>Escova Semi Definitiva:</strong> Alisamento semi permanente com argila e ativos orgânicos.</li>
-          <li class="text-lg"><strong>Escova Progressiva:</strong> Alisamento duradouro que reduz o frizz e promove um efeito liso.</li>
+        <ul class="list-disc list-inside py-4">
+          <li><strong>Escova Modelada:</strong> Define e modela os fios, criando volume e ondulações conforme desejado.</li>
+          <li><strong>Escova Semi Definitiva Argilotherapy:</strong> Alisamento semi permanente com argila e ativos orgânicos.</li>
+          <li><strong>Escova Progressiva Cadiveu:</strong> Alisamento duradouro que reduz o frizz e promove um efeito liso aos cabelos.</li>
         </ul>
       </div>
 
-      <button class="accordion">Tratamentos de Recuperação Capilar</button>
-      <div class="panel">
-        <ul class="list-disc list-inside primary-text py-4">
-          <li class="text-lg"><strong>Selagem Capilar de Tanino:</strong> Sela as cutículas dos fios, garantindo brilho e proteção.</li>
-          <li class="text-lg"><strong>Blindagem Indiana:</strong> Cria uma película protetora ao redor dos fios, conferindo maciez e controle do frizz.</li>
-          <li class="text-lg"><strong>Reconstrução Capilar:</strong> Tratamento profundo que repõe proteínas e reconstrói a estrutura dos fios danificados.</li>
-          <li class="text-lg"><strong>Nanoqueratina:</strong> Restaura a força e o brilho dos fios com reposição de queratina.</li>
-        </ul>
-      </div>
+      <!-- Continue com os outros serviços... -->
+    </div>
+  </section>
 
-      <button class="accordion">Coloração e Mechas</button>
-      <div class="panel">
-        <ul class="list-disc list-inside primary-text py-4">
-          <li class="text-lg"><strong>Matização:</strong> Neutralização de tons amarelados ou alaranjados em cabelos loiros ou com mechas.</li>
-          <li class="text-lg"><strong>Mechas:</strong> Técnica de coloração parcial dos fios para um efeito iluminado.</li>
-          <li class="text-lg"><strong>Coloração Completa:</strong> Mudança da cor natural dos fios, com tons desejados.</li>
-        </ul>
+  <!-- Agendamento e Grupo VIP -->
+  <section class="py-12 px-4 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Agendamento e Grupo VIP</h2>
+    <a href="https://api.whatsapp.com/send/?phone=5555999218454" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg">Agende seu Horário</a>
+    <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" class="mt-4 inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg">Entre no Grupo VIP</a>
+    <p class="mt-4 text-lg">Pagamento antecipado de 50% para promoções via Pix.</p>
+  </section>
+
+  <!-- Provas Sociais (Depoimentos) -->
+  <section class="py-12 px-4 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-8">Provas Sociais (Depoimentos)</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold">Avaliação do Google</h3>
+        <p class="mt-4 text-lg">"Atendimento maravilhoso! A Lisa e sua equipe são extremamente atenciosas..."</p>
+        <a href="https://g.page/r/CfBrdD-_UIzaEAE" class="text-pink-600 underline mt-4 inline-block">Ver avaliação no Google</a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold">Avaliação do Facebook</h3>
+        <p class="mt-4 text-lg">"Experiência incrível, tanto nos serviços de cabelo quanto nas unhas..."</p>
+        <a href="https://www.facebook.com/LisaMoraesCentroDeBeleza/reviews" class="text-pink-600 underline mt-4 inline-block">Ver avaliação no Facebook</a>
       </div>
     </div>
   </section>
 
-  <!-- Agendamento Section -->
-  <section class="py-12 px-4 bg-white text-center">
-    <h2 class="text-3xl font-bold accent-color mb-4">Agendamento</h2>
-    <a href="https://api.whatsapp.com/send/?phone=5555999218454&text&type=phone_number&app_absent=0" class="button">Agende seu Horário</a>
-    <p class="mt-4 primary-text">Pagamento antecipado de 50% para promoções via Pix.</p>
-  </section>
-
-  <!-- Grupo VIP Section -->
-  <section class="py-12 px-4 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold accent-color mb-4">Entre no Grupo VIP</h2>
-    <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" class="button">Acesse o Grupo VIP no WhatsApp</a>
+  <!-- Produtos em Destaque -->
+  <section class="py-12 px-4 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-8">Produtos em Destaque</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <img src="https://ibb.co/Z6wXd4C" alt="Batom Líquido Matte At Play™" class="w-full h-48 object-cover rounded-md">
+        <h3 class="mt-4 text-2xl font-bold">Batom Líquido Matte At Play™</h3>
+        <p class="text-lg text-pink-600">R$ 33,90</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <img src="https://ibb.co/yWRKd8H" alt="Máscara Meo Liso" class="w-full h-48 object-cover rounded-md">
+        <h3 class="mt-4 text-2xl font-bold">Máscara Meo Liso</h3>
+        <p class="text-lg text-pink-600">R$ 110,00</p>
+      </div>
+    </div>
   </section>
 
   <!-- Instagram Widget -->
-  <section class="py-12 px-4 bg-white text-center">
-    <h2 class="text-3xl font-bold accent-color mb-4">Siga-nos no Instagram</h2>
+  <section class="py-12 px-4 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-4">Siga-nos no Instagram</h2>
     <div class="elfsight-app-080de5f3-d5aa-4697-a86e-3191693970f0" data-elfsight-app-lazy></div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8 text-center">
     <p>&copy; 2024 Lisa Moraes Centro de Beleza. Todos os direitos reservados.</p>
   </footer>
 
   <script>
-    // JavaScript para os menus suspensos (accordions)
     var acc = document.getElementsByClassName("accordion");
     for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
