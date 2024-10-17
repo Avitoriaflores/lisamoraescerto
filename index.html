@@ -9,14 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Quicksand', sans-serif; /* Fonte arredondada e delicada */
+      font-family: 'Quicksand', sans-serif;
     }
     .header-logo {
       width: 120px;
       margin: 0 auto;
       display: block;
     }
-    /* Estilos para os cartões de promoções e serviços */
     .card {
       background-color: white;
       padding: 20px;
@@ -33,11 +32,6 @@
     .footer-credits {
       font-size: 0.8rem;
       color: #aaaaaa;
-    }
-    /* Estilos para o Grupo VIP */
-    #regrasVip {
-      display: none;
-      margin-top: 20px;
     }
   </style>
 </head>
@@ -113,7 +107,7 @@
   <!-- Botão de Agendamento -->
   <section class="py-12 px-4 text-center">
     <h2 class="text-3xl font-bold mb-4">Agende seu horário</h2>
-    <a href="https://api.whatsapp.com/send/?phone=5555999218454&text=Olá, gostaria de agendar um horário!" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg">Agende pelo WhatsApp</a>
+    <a href="https://api.whatsapp.com/send/?phone=5555999218454&text=Olá, vim pelo site." class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg" target="_blank">Agende pelo WhatsApp</a>
   </section>
 
   <!-- Seção Sobre Lisa Moraes -->
@@ -173,23 +167,24 @@
     <h2 class="text-3xl font-bold text-center mb-8">Linhas Profissionais e Mais</h2>
     <p class="text-center mb-6">Além dos serviços oferecidos, também temos à venda produtos das linhas profissionais e outros produtos para cuidados de beleza!</p>
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Produto 1: Batom Líquido Matte At Play -->
       <div class="card">
-        <img src="https://i.ibb.co/DD6W4cn/2fde033f-1cd9-4991-bc0a-cf7474334585.jpg" alt="Batom Líquido Matte At Play™">
+        <img src="https://i.ibb.co/gRdhhzK/J2008417-UNL-LA-144-At-Play-Matte-Liquid-Lip-Update-Soldier-Berry-Strong-WT.jpg" alt="Batom Líquido Matte At Play™">
         <h3 class="mt-4 text-2xl font-bold">Batom Líquido Matte At Play™</h3>
         <p class="text-lg text-red-600">R$ 33,90</p>
       </div>
+
+      <!-- Produto 2: Shampoo Flash Blonde -->
       <div class="card">
-        <img src="https://i.ibb.co/18nB79F/7dbbfa19-97a0-4471-978f-7ddff251adc9.jpg" alt="Máscara Meo Liso">
-        <h3 class="mt-4 text-2xl font-bold">Máscara Meo Liso</h3>
-        <p class="text-lg text-red-600">R$ 110,00</p>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/T4KwCGt/photo-4938538974343965875-x.jpg" alt="Shampoo e Condicionador Flash Blonde">
-        <h3 class="mt-4 text-2xl font-bold">Shampoo e Condicionador Flash Blonde</h3>
+        <img src="https://i.ibb.co/6BpyRTt/shampoo-flash-blonde-london-cosmeticos-1-l.jpg" alt="Shampoo Flash Blonde">
+        <h3 class="mt-4 text-2xl font-bold">Shampoo Flash Blonde</h3>
         <p class="text-lg text-red-600">R$ 164,00</p>
       </div>
+
+      <!-- Produto 3: Máscara Argila London -->
       <div class="card">
-        <img src="https://i.ibb.co/r3knQwh/imageeee.webp" alt="Máscara Argila London">
+        <img src="https://i.ibb.co/pn3HSXC/mascara-argila-reconstruction-london-cosmeticos-500-g.jpg" alt="Máscara Argila London">
         <h3 class="mt-4 text-2xl font-bold">Máscara Argila London</h3>
         <p class="text-lg text-red-600">R$ 110,00</p>
       </div>
@@ -200,13 +195,13 @@
   <section class="py-12 px-4 bg-gray-100 text-center">
     <h2 class="text-3xl font-bold mb-4">Entre no Grupo VIP</h2>
     <p class="text-lg mb-4">Seja parte do nosso <strong>Grupo VIP Exclusivo</strong> e tenha acesso antecipado a promoções e ofertas limitadas! Nossas vagas no grupo são <strong>limitadas</strong> e apenas os primeiros terão acesso às promoções especiais antes de qualquer outra pessoa. Não perca essa oportunidade de garantir seus serviços de beleza com preços incríveis e benefícios exclusivos!</p>
-    <a href="#" class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg" onclick="mostrarRegras()">Acesse o Grupo VIP no WhatsApp</a>
+    <a href="#" class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg" onclick="mostrarRegras()" target="_blank">Acesse o Grupo VIP no WhatsApp</a>
     
     <div id="regrasVip">
       <p class="text-lg mt-4">Pagamento antecipado de 50% para promoções via Pix.</p>
       <p class="text-lg">Tolerância de atraso de 10 minutos.</p>
       <p class="text-lg">Não comparecimento sem aviso prévio de 24 horas resultará na perda do sinal pago.</p>
-      <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg mt-4">Aceito, ir para o Grupo VIP</a>
+      <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg mt-4" target="_blank">Aceito, ir para o Grupo VIP</a>
     </div>
   </section>
 
