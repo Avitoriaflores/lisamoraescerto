@@ -399,6 +399,59 @@
   </div>
 </section>
 
+<!-- Grupo VIP no final da página -->
+<section id="grupo-vip" class="py-12 px-4 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-4">Acesse o Grupo VIP</h2>
+  <p class="text-lg mb-6">Tenha acesso exclusivo às nossas promoções e ofertas!</p>
+  
+  <!-- Botão para abrir o modal -->
+  <button id="open-modal" class="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg">Acesse o Grupo VIP</button>
+
+  <!-- Modal de Regras (inicialmente escondido) -->
+  <div id="modal-regras" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden">
+    <div class="bg-white max-w-lg mx-auto mt-24 p-8 rounded-lg shadow-lg relative">
+      <h3 class="text-2xl font-bold mb-4">Regras do Grupo VIP</h3>
+      <ul class="text-left mb-6">
+        <li class="mb-2">1. Pagamento antecipado de 50% para promoções via Pix.</li>
+        <li class="mb-2">2. Tolerância de atraso de 10 minutos.</li>
+        <li>3. Não comparecimento sem aviso prévio de 24 horas resultará na perda do sinal pago.</li>
+      </ul>
+
+      <!-- Botão para acessar o grupo no WhatsApp -->
+      <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-lg text-lg">Ir para o Grupo VIP no WhatsApp</a>
+
+      <!-- Botão para fechar o modal -->
+      <button id="close-modal" class="absolute top-4 right-4 text-gray-600 text-lg">✖</button>
+    </div>
+  </div>
+</section>
+
+<!-- Script para funcionalidade de abrir e fechar modal -->
+<script>
+  // Referência aos elementos
+  const openModalBtn = document.getElementById('open-modal');
+  const closeModalBtn = document.getElementById('close-modal');
+  const modalRegras = document.getElementById('modal-regras');
+
+  // Abrir modal quando clicar no botão
+  openModalBtn.addEventListener('click', function() {
+    modalRegras.classList.remove('hidden');
+  });
+
+  // Fechar modal quando clicar no botão de fechar
+  closeModalBtn.addEventListener('click', function() {
+    modalRegras.classList.add('hidden');
+  });
+
+  // Fechar modal ao clicar fora da caixa
+  window.addEventListener('click', function(event) {
+    if (event.target == modalRegras) {
+      modalRegras.classList.add('hidden');
+    }
+  });
+</script>
+
+  
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8 text-center">
