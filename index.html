@@ -11,13 +11,13 @@
       font-family: 'Poppins', sans-serif;
     }
     .main-bg {
-      background-color: #f5f5f5; /* fundo claro, sofisticado */
+      background-color: #f5f5f5;
     }
     .primary-text {
-      color: #333333; /* cor de texto neutra */
+      color: #333333;
     }
     .accent-color {
-      color: #5a5a5a; /* tons neutros e elegantes */
+      color: #5a5a5a;
     }
     .button {
       background-color: #333333;
@@ -28,6 +28,32 @@
     }
     .button:hover {
       background-color: #5a5a5a;
+    }
+    .accordion {
+      cursor: pointer;
+      background-color: #f5f5f5;
+      padding: 18px;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: background-color 0.4s ease;
+    }
+    .accordion:hover {
+      background-color: #e2e2e2;
+    }
+    .accordion:after {
+      content: '\\002B';
+      font-size: 1.5rem;
+      float: right;
+    }
+    .accordion.active:after {
+      content: '\\2212';
+    }
+    .panel {
+      display: none;
+      background-color: white;
+      overflow: hidden;
+      padding: 0 18px;
     }
   </style>
 </head>
@@ -43,15 +69,16 @@
   <!-- Promoções Section -->
   <section id="promocoes" class="py-12 px-4 bg-white">
     <h2 class="text-3xl font-bold text-center accent-color mb-8">Promoções do Mês</h2>
-
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Promo Item 1 -->
       <div class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center">
-        <img src="file_path_da_imagem" alt="Botox Capilar + Ozonioterapia" class="w-full h-64 object-cover rounded-md">
+        <img src="https://ibb.co/zbBF4Vb" alt="Botox Capilar + Ozonioterapia" class="w-full h-64 object-cover rounded-md">
         <h3 class="mt-4 text-2xl font-bold accent-color">Botox Capilar + Ozonioterapia</h3>
         <p class="mt-2 text-lg line-through text-gray-500">De: R$ 150,00</p>
         <p class="text-lg accent-color font-bold">Por: R$ 79,90</p>
         <p class="mt-2 text-sm text-gray-500">Pagamento via Pix disponível</p>
       </div>
+      <!-- Outros itens -->
     </div>
   </section>
 
@@ -70,11 +97,43 @@
   <section class="py-12 px-4 bg-gray-100">
     <h2 class="text-3xl font-bold text-center accent-color mb-8">Serviços Oferecidos</h2>
     <div class="max-w-4xl mx-auto">
-      <ul class="list-disc list-inside primary-text">
-        <li class="text-lg"><strong>Corte:</strong> Corte simples, Corte com escova, Corte bordado.</li>
-        <li class="text-lg"><strong>Tratamentos:</strong> Hidratação, Selagem Capilar, Nanoqueratina.</li>
-        <li class="text-lg"><strong>Escovas:</strong> Modelada, Semi Definitiva, Progressiva.</li>
-      </ul>
+
+      <button class="accordion">Estética Capilar</button>
+      <div class="panel">
+        <ul class="list-disc list-inside primary-text py-4">
+          <li class="text-lg"><strong>Corte simples:</strong> Renovação do visual ou manutenção do comprimento.</li>
+          <li class="text-lg"><strong>Corte com escova:</strong> Finalizado com uma escova, dando forma e modelagem aos fios.</li>
+          <li class="text-lg"><strong>Corte bordado:</strong> Técnica que remove pontas duplas sem alterar o comprimento dos fios.</li>
+        </ul>
+      </div>
+
+      <button class="accordion">Escovas e Tratamentos Alisantes</button>
+      <div class="panel">
+        <ul class="list-disc list-inside primary-text py-4">
+          <li class="text-lg"><strong>Escova Modelada:</strong> Define e modela os fios, criando volume e ondulações conforme desejado.</li>
+          <li class="text-lg"><strong>Escova Semi Definitiva:</strong> Alisamento semi permanente com argila e ativos orgânicos.</li>
+          <li class="text-lg"><strong>Escova Progressiva:</strong> Alisamento duradouro que reduz o frizz e promove um efeito liso.</li>
+        </ul>
+      </div>
+
+      <button class="accordion">Tratamentos de Recuperação Capilar</button>
+      <div class="panel">
+        <ul class="list-disc list-inside primary-text py-4">
+          <li class="text-lg"><strong>Selagem Capilar de Tanino:</strong> Sela as cutículas dos fios, garantindo brilho e proteção.</li>
+          <li class="text-lg"><strong>Blindagem Indiana:</strong> Cria uma película protetora ao redor dos fios, conferindo maciez e controle do frizz.</li>
+          <li class="text-lg"><strong>Reconstrução Capilar:</strong> Tratamento profundo que repõe proteínas e reconstrói a estrutura dos fios danificados.</li>
+          <li class="text-lg"><strong>Nanoqueratina:</strong> Restaura a força e o brilho dos fios com reposição de queratina.</li>
+        </ul>
+      </div>
+
+      <button class="accordion">Coloração e Mechas</button>
+      <div class="panel">
+        <ul class="list-disc list-inside primary-text py-4">
+          <li class="text-lg"><strong>Matização:</strong> Neutralização de tons amarelados ou alaranjados em cabelos loiros ou com mechas.</li>
+          <li class="text-lg"><strong>Mechas:</strong> Técnica de coloração parcial dos fios para um efeito iluminado.</li>
+          <li class="text-lg"><strong>Coloração Completa:</strong> Mudança da cor natural dos fios, com tons desejados.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -88,7 +147,7 @@
   <!-- Grupo VIP Section -->
   <section class="py-12 px-4 bg-gray-100 text-center">
     <h2 class="text-3xl font-bold accent-color mb-4">Entre no Grupo VIP</h2>
-    <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" class="button">Acesse o Grupo VIP</a>
+    <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" class="button">Acesse o Grupo VIP no WhatsApp</a>
   </section>
 
   <!-- Instagram Widget -->
@@ -101,6 +160,22 @@
   <footer class="bg-gray-800 text-white py-8 text-center">
     <p>&copy; 2024 Lisa Moraes Centro de Beleza. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    // JavaScript para os menus suspensos (accordions)
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
