@@ -39,6 +39,11 @@
       margin: 0 auto;
       display: block;
     }
+    /* Rodapé */
+    .footer-credits {
+      font-size: 0.8rem;
+      color: #aaaaaa;
+    }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -132,13 +137,21 @@
   <!-- Grupo VIP e Regras do Pix -->
   <section class="py-12 px-4 bg-gray-100 text-center">
     <h2 class="text-3xl font-bold mb-4">Entre no Grupo VIP</h2>
-    <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg">Acesse o Grupo VIP no WhatsApp</a>
-    <p class="mt-4 text-lg">Pagamento antecipado de 50% para promoções via Pix.</p> <!-- Regras do Pix somente para o grupo VIP -->
+    <p class="text-lg mb-4">Seja parte do nosso <strong>Grupo VIP Exclusivo</strong> e tenha acesso antecipado a promoções e ofertas limitadas! Nossas vagas no grupo são <strong>limitadas</strong> e apenas os primeiros terão acesso às promoções especiais antes de qualquer outra pessoa. Não perca essa oportunidade de garantir seus serviços de beleza com preços incríveis e benefícios exclusivos!</p>
+    <a href="#" class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg" onclick="mostrarRegras()">Acesse o Grupo VIP no WhatsApp</a>
+    
+    <div id="regrasVip" style="display: none; margin-top: 20px;">
+      <p class="text-lg mt-4">Pagamento antecipado de 50% para promoções via Pix.</p>
+      <p class="text-lg">Tolerância de atraso de 10 minutos.</p>
+      <p class="text-lg">Não comparecimento sem aviso prévio de 24 horas resultará na perda do sinal pago.</p>
+      <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg mt-4">Aceito, ir para o Grupo VIP</a>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8 text-center">
     <p>&copy; 2024 Lisa Moraes Centro de Beleza. Todos os direitos reservados.</p>
+    <p class="footer-credits">Desenvolvido por Vitória Flores</p> <!-- Créditos no rodapé -->
   </footer>
 
   <script>
@@ -153,6 +166,12 @@
           panel.style.display = "block";
         }
       });
+    }
+
+    // Mostrar regras do VIP
+    function mostrarRegras() {
+      var regras = document.getElementById('regrasVip');
+      regras.style.display = regras.style.display === 'none' ? 'block' : 'none';
     }
   </script>
 
