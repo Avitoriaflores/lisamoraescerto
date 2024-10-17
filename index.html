@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lisa Moraes Centro de Beleza</title> <!-- Título atualizado -->
+  <title>Lisa Moraes Centro de Beleza</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://static.elfsight.com/platform/platform.js" async></script>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
@@ -50,10 +50,11 @@
     <p class="text-xl text-gray-600 mt-4">Sua beleza e autoestima em primeiro lugar</p>
   </header>
 
-  <!-- Seção Promoções -->
+  <!-- Seção Promoções Outubro Rosa -->
   <section id="promocoes" class="py-12 px-4">
     <h2 class="text-3xl font-bold text-center mb-8">Promoções de Outubro Rosa</h2>
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Promoção 1 -->
       <div class="card">
         <img src="https://i.ibb.co/K7fDrx7/pexels-cottonbro-3993461.jpg" alt="Botox Capilar + Ozonioterapia">
         <h3 class="mt-4 text-2xl font-bold">Botox Capilar + Ozonioterapia</h3>
@@ -61,12 +62,14 @@
         <p class="text-lg text-red-600">Por: R$ 79,90</p>
       </div>
 
+      <!-- Promoção 2 -->
       <div class="card">
         <img src="https://i.ibb.co/KmkB4XC/pexels-cottonbro-7440131.jpg" alt="Manicure + Pedicure + Nutrição Loucas e Lisas">
         <h3 class="mt-4 text-2xl font-bold">Manicure + Pedicure + Nutrição Loucas e Lisas</h3>
         <p class="text-lg text-red-600">R$ 114,90</p>
       </div>
 
+      <!-- Promoção 3 -->
       <div class="card">
         <img src="https://i.ibb.co/9qnDNBH/pexels-deni-priyo-3550015-10028673.jpg" alt="Semidefinitiva Orgânica">
         <h3 class="mt-4 text-2xl font-bold">Semidefinitiva Orgânica</h3>
@@ -74,12 +77,43 @@
         <p class="text-lg text-red-600">Por: R$ 149,90</p>
       </div>
 
+      <!-- Promoção 4 -->
+      <div class="card">
+        <img src="https://i.ibb.co/VBgT4XG/pexels-kerimeveyik-15866050.jpg" alt="Esmaltação em Gel + Design de Sobrancelhas com Henna">
+        <h3 class="mt-4 text-2xl font-bold">Esmaltação em Gel + Design de Sobrancelhas com Henna</h3>
+        <p class="text-lg">Esmaltação em Gel: R$ 55,00</p>
+        <p class="text-lg">Design de Sobrancelhas com Henna: R$ 40,00</p>
+      </div>
+
+      <!-- Promoção 5 -->
       <div class="card">
         <img src="https://i.ibb.co/YNkyFMG/pexels-kpaukshtite-704815.jpg" alt="Limpeza de Pele Completa + Brinde Design de Sobrancelha">
         <h3 class="mt-4 text-2xl font-bold">Limpeza de Pele Completa + Brinde Design de Sobrancelha</h3>
         <p class="text-lg text-red-600">R$ 79,90</p>
       </div>
+
+      <!-- Promoção 6 -->
+      <div class="card">
+        <img src="https://i.ibb.co/44f00J4/pexels-pexels-user-101154924-9393756.jpg" alt="Combo de Ofertas (Botox Capilar, Corte, Escova, Unhas)">
+        <h3 class="mt-4 text-2xl font-bold">Combo de Ofertas (Botox Capilar, Corte, Escova, Unhas)</h3>
+        <p class="text-lg">Botox Capilar: R$ 124,00</p>
+        <p class="text-lg">Corte (Corte, Hidratação, Escova): R$ 89,00</p>
+        <p class="text-lg">Unhas (Manicure, Pedicure): R$ 59,00</p>
+      </div>
+
+      <!-- Promoção 7 -->
+      <div class="card">
+        <img src="https://i.ibb.co/VDtBQc7/pexels-shkrabaanthony-5178009.jpg" alt="Manicure Simples (Segunda e Terça-Feira)">
+        <h3 class="mt-4 text-2xl font-bold">Manicure Simples (Segunda e Terça-Feira)</h3>
+        <p class="text-lg text-red-600">R$ 25,00</p>
+      </div>
     </div>
+  </section>
+
+  <!-- Botão de Agendamento -->
+  <section class="py-12 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Agende seu horário</h2>
+    <a href="https://api.whatsapp.com/send/?phone=5555999218454&text=Olá, gostaria de agendar um horário!" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg">Agende pelo WhatsApp</a>
   </section>
 
   <!-- Seção Sobre Lisa Moraes -->
@@ -136,8 +170,8 @@
 
   <!-- Seção de Produtos em Destaque -->
   <section class="py-12 px-4 bg-white">
-    <h2 class="text-3xl font-bold text-center mb-8">Produtos Mary Kay e Mais</h2>
-    <p class="text-center mb-6">Além dos serviços oferecidos, também temos à venda produtos da linha Mary Kay e outros produtos para cuidados de beleza!</p>
+    <h2 class="text-3xl font-bold text-center mb-8">Linhas Profissionais e Mais</h2>
+    <p class="text-center mb-6">Além dos serviços oferecidos, também temos à venda produtos das linhas profissionais e outros produtos para cuidados de beleza!</p>
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="card">
         <img src="https://i.ibb.co/DD6W4cn/2fde033f-1cd9-4991-bc0a-cf7474334585.jpg" alt="Batom Líquido Matte At Play™">
@@ -147,6 +181,16 @@
       <div class="card">
         <img src="https://i.ibb.co/18nB79F/7dbbfa19-97a0-4471-978f-7ddff251adc9.jpg" alt="Máscara Meo Liso">
         <h3 class="mt-4 text-2xl font-bold">Máscara Meo Liso</h3>
+        <p class="text-lg text-red-600">R$ 110,00</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/T4KwCGt/photo-4938538974343965875-x.jpg" alt="Shampoo e Condicionador Flash Blonde">
+        <h3 class="mt-4 text-2xl font-bold">Shampoo e Condicionador Flash Blonde</h3>
+        <p class="text-lg text-red-600">R$ 164,00</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/r3knQwh/imageeee.webp" alt="Máscara Argila London">
+        <h3 class="mt-4 text-2xl font-bold">Máscara Argila London</h3>
         <p class="text-lg text-red-600">R$ 110,00</p>
       </div>
     </div>
@@ -164,12 +208,6 @@
       <p class="text-lg">Não comparecimento sem aviso prévio de 24 horas resultará na perda do sinal pago.</p>
       <a href="https://chat.whatsapp.com/KH5TCYYVsyoDZAH9m9S3gv" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg mt-4">Aceito, ir para o Grupo VIP</a>
     </div>
-  </section>
-
-  <!-- Seção de Agendamento -->
-  <section class="py-12 px-4 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-4">Agende seu horário</h2>
-    <a href="https://api.whatsapp.com/send/?phone=5555999218454&text=Olá, gostaria de agendar um horário!" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg">Agende pelo WhatsApp</a>
   </section>
 
   <!-- Footer -->
