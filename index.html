@@ -147,32 +147,34 @@
     </div>
 
 
-  <!-- Seção Serviços Oferecidos -->
+ <!-- Seção Serviços Oferecidos -->
 <section id="servicos" class="py-12 px-4 bg-gray-100">
   <h2 class="text-3xl font-bold text-center mb-8">Serviços Oferecidos</h2>
   <div class="max-w-4xl mx-auto">
 
-    <!-- Estética Capilar -->
-    <div class="card">
-      <h3 class="text-2xl font-bold">Estética Capilar</h3>
-      <ul class="list-disc list-inside py-4">
-        <li><strong>Corte Simples:</strong> Renovação do visual ou manutenção do comprimento.</li>
-        <li><strong>Corte com Escova:</strong> Finalizado com uma escova, dando forma e modelagem aos fios.</li>
-        <li><strong>Corte Bordado:</strong> Técnica que remove pontas duplas sem alterar o comprimento dos fios.</li>
-        <li><strong>Escova Modelada:</strong> Define e modela os fios, criando volume e ondulações conforme desejado.</li>
-        <li><strong>Escova Semi Definitiva Argilotherapy:</strong> Alisamento semi permanente com argila e ativos orgânicos.</li>
-        <li><strong>Escova Progressiva Cadiveu:</strong> Alisamento duradouro que reduz o frizz e promove um efeito liso aos cabelos.</li>
-        <li><strong>Selagem Capilar de Tanino:</strong> Sela as cutículas dos fios, garantindo brilho e proteção.</li>
-        <li><strong>Blindagem Indiana Loucas & Lisas:</strong> Cria uma película protetora ao redor dos fios, conferindo maciez e controle do frizz.</li>
-        <li><strong>Reconstrução Capilar:</strong> Tratamento profundo que repõe proteínas e reconstrói a estrutura dos fios danificados.</li>
-        <li><strong>Nanoqueratina:</strong> Restaura a força e o brilho dos fios com reposição de queratina.</li>
-        <li><strong>Hidratação Capilar:</strong> Reposição de água nos fios, garantindo maciez e flexibilidade.</li>
-        <li><strong>Nutrição Capilar:</strong> Reposição de lipídios, restaurando o brilho e a saúde dos fios.</li>
-        <li><strong>Massagem Capilar:</strong> Técnica de relaxamento aplicada no couro cabeludo, estimulando a circulação e o crescimento dos fios.</li>
-        <li><strong>Ozonioterapia:</strong> Tratamento com ozônio que estimula o couro cabeludo e melhora a saúde capilar.</li>
-        <li><strong>Terapia Quelante:</strong> Remove resíduos de metais e impurezas dos fios.</li>
-        <li><strong>Regeneração Capilar com Photon Laser e Alta Frequência:</strong> Laser estimula a regeneração dos fios e couro cabeludo.</li>
-      </ul>
+    <!-- Accordion Estética Capilar -->
+    <div class="card mb-4">
+      <button onclick="toggleAccordion('capilar')" class="w-full text-left bg-gray-200 px-4 py-2 text-2xl font-bold">Estética Capilar</button>
+      <div id="capilar" class="accordion-content hidden px-4 py-2">
+        <ul class="list-disc list-inside py-4">
+          <li><strong>Corte Simples:</strong> Renovação do visual ou manutenção do comprimento.</li>
+          <li><strong>Corte com Escova:</strong> Finalizado com uma escova, dando forma e modelagem aos fios.</li>
+          <li><strong>Corte Bordado:</strong> Técnica que remove pontas duplas sem alterar o comprimento dos fios.</li>
+          <li><strong>Escova Modelada:</strong> Define e modela os fios, criando volume e ondulações conforme desejado.</li>
+          <li><strong>Escova Semi Definitiva Argilotherapy:</strong> Alisamento semi permanente com argila e ativos orgânicos.</li>
+          <li><strong>Escova Progressiva Cadiveu:</strong> Alisamento duradouro que reduz o frizz e promove um efeito liso aos cabelos.</li>
+          <li><strong>Selagem Capilar de Tanino:</strong> Sela as cutículas dos fios, garantindo brilho e proteção.</li>
+          <li><strong>Blindagem Indiana Loucas & Lisas:</strong> Cria uma película protetora ao redor dos fios, conferindo maciez e controle do frizz.</li>
+          <li><strong>Reconstrução Capilar:</strong> Tratamento profundo que repõe proteínas e reconstrói a estrutura dos fios danificados.</li>
+          <li><strong>Nanoqueratina:</strong> Restaura a força e o brilho dos fios com reposição de queratina.</li>
+          <li><strong>Hidratação Capilar:</strong> Reposição de água nos fios, garantindo maciez e flexibilidade.</li>
+          <li><strong>Nutrição Capilar:</strong> Reposição de lipídios, restaurando o brilho e a saúde dos fios.</li>
+          <li><strong>Massagem Capilar:</strong> Técnica de relaxamento aplicada no couro cabeludo, estimulando a circulação e o crescimento dos fios.</li>
+          <li><strong>Ozonioterapia:</strong> Tratamento com ozônio que estimula o couro cabeludo e melhora a saúde capilar.</li>
+          <li><strong>Terapia Quelante:</strong> Remove resíduos de metais e impurezas dos fios.</li>
+          <li><strong>Regeneração Capilar com Photon Laser e Alta Frequência:</strong> Laser estimula a regeneração dos fios e couro cabeludo.</li>
+        </ul>
+      </div>
     </div>
 
     <!-- Coloração e Mechas -->
@@ -225,6 +227,18 @@
 
   </div>
 </section>
+
+<script>
+  function toggleAccordion(sectionId) {
+    var content = document.getElementById(sectionId);
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+    } else {
+      content.classList.add('hidden');
+    }
+  }
+</script>
+
 
  <!-- Seção Provas Sociais (Depoimentos) -->
 <section id="provas-sociais" class="py-12 px-4 bg-white">
