@@ -152,15 +152,17 @@
   <h2 class="text-3xl font-bold text-center mb-8">Serviços Oferecidos</h2>
   <div class="max-w-4xl mx-auto">
 
-    <!-- Accordion Estética Capilar -->
+    <!-- Estética Capilar (Com Expansão Parcial) -->
     <div class="card mb-4">
-      <button onclick="toggleAccordion('capilar')" class="w-full text-left bg-gray-200 px-4 py-2 text-2xl font-bold">Estética Capilar</button>
-      <div id="capilar" class="accordion-content hidden px-4 py-2">
-        <ul class="list-disc list-inside py-4">
-          <li><strong>Corte Simples:</strong> Renovação do visual ou manutenção do comprimento.</li>
-          <li><strong>Corte com Escova:</strong> Finalizado com uma escova, dando forma e modelagem aos fios.</li>
-          <li><strong>Corte Bordado:</strong> Técnica que remove pontas duplas sem alterar o comprimento dos fios.</li>
-          <li><strong>Escova Modelada:</strong> Define e modela os fios, criando volume e ondulações conforme desejado.</li>
+      <h3 class="text-2xl font-bold">Estética Capilar</h3>
+      <ul class="list-disc list-inside py-4">
+        <!-- Serviços visíveis por padrão -->
+        <li><strong>Corte Simples:</strong> Renovação do visual ou manutenção do comprimento.</li>
+        <li><strong>Corte com Escova:</strong> Finalizado com uma escova, dando forma e modelagem aos fios.</li>
+        <li><strong>Escova Modelada:</strong> Define e modela os fios, criando volume e ondulações conforme desejado.</li>
+        
+        <!-- Serviços ocultos até clicar para expandir -->
+        <div id="more-capilar-services" class="hidden">
           <li><strong>Escova Semi Definitiva Argilotherapy:</strong> Alisamento semi permanente com argila e ativos orgânicos.</li>
           <li><strong>Escova Progressiva Cadiveu:</strong> Alisamento duradouro que reduz o frizz e promove um efeito liso aos cabelos.</li>
           <li><strong>Selagem Capilar de Tanino:</strong> Sela as cutículas dos fios, garantindo brilho e proteção.</li>
@@ -173,8 +175,14 @@
           <li><strong>Ozonioterapia:</strong> Tratamento com ozônio que estimula o couro cabeludo e melhora a saúde capilar.</li>
           <li><strong>Terapia Quelante:</strong> Remove resíduos de metais e impurezas dos fios.</li>
           <li><strong>Regeneração Capilar com Photon Laser e Alta Frequência:</strong> Laser estimula a regeneração dos fios e couro cabeludo.</li>
-        </ul>
-      </div>
+        </div>
+      </ul>
+
+      <!-- Botão para expandir/colapsar -->
+      <button id="toggle-capilar" class="text-blue-500 hover:text-blue-700 focus:outline-none">
+        <span id="toggle-text">Mostrar mais</span> 
+        <span id="toggle-icon">⬇️</span>
+      </button>
     </div>
 
     <!-- Coloração e Mechas -->
@@ -227,6 +235,26 @@
 
   </div>
 </section>
+
+<!-- Script para expandir/colapsar serviços de Estética Capilar -->
+<script>
+  const toggleButton = document.getElementById('toggle-capilar');
+  const moreServices = document.getElementById('more-capilar-services');
+  const toggleText = document.getElementById('toggle-text');
+  const toggleIcon = document.getElementById('toggle-icon');
+
+  toggleButton.addEventListener('click', function() {
+    moreServices.classList.toggle('hidden');
+    if (moreServices.classList.contains('hidden')) {
+      toggleText.textContent = 'Mostrar mais';
+      toggleIcon.textContent = '⬇️';
+    } else {
+      toggleText.textContent = 'Mostrar menos';
+      toggleIcon.textContent = '⬆️';
+    }
+  });
+</script>
+
 
 <script>
   function toggleAccordion(sectionId) {
@@ -316,13 +344,15 @@
     </div>
   </section>
 
-  <!-- Embed do Instagram -->
-  <section class="py-12 px-4 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold mb-4">Siga-nos no Instagram</h2>
-    <div class="max-w-4xl mx-auto">
-      <div class="elfsight-app-080de5f3-d5aa-4697-a86e-3191693970f0"></div>
-    </div>
-  </section>
+<!-- Seção Instagram -->
+<section class="py-12 px-4 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-4">Siga-nos no Instagram</h2>
+  <div class="max-w-4xl mx-auto">
+    <!-- Centralizar o iframe Instagram -->
+    <div class="elfsight-app-080de5f3-d5aa-4697-a86e-3191693970f0 mx-auto"></div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8 text-center">
