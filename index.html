@@ -433,29 +433,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2 class="text-3xl font-bold mb-8">Produtos Mary Kay</h2>
 
   <!-- Container do Swiper com centralização -->
-  <div class="swiper-container mx-auto" style="max-width: 300px;">
+  <div class="swiper-container mx-auto" style="width: 300px;">
     <!-- Wrapper para os Slides -->
     <div class="swiper-wrapper">
 
       <!-- Slide 1 -->
-      <div class="swiper-slide flex justify-center items-center bg-white rounded-lg shadow-md p-4">
-        <img src="https://i.ibb.co/pvhCHL5/aa2d6e6d-dc43-4021-9613-8e56d86d7e05.jpg" alt="Produto Mary Kay" class="w-full h-auto object-contain rounded-md">
+      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-center">
+        <img src="https://i.ibb.co/pvhCHL5/aa2d6e6d-dc43-4021-9613-8e56d86d7e05.jpg" alt="Produto Mary Kay" class="object-contain rounded-md">
       </div>
 
       <!-- Slide 2 -->
-      <div class="swiper-slide flex justify-center items-center bg-white rounded-lg shadow-md p-4">
-        <img src="https://i.ibb.co/2jHgHxy/58577497-f6c3-4d24-817f-6464b0d3d9ab.jpg" alt="Produto Mary Kay" class="w-full h-auto object-contain rounded-md">
+      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-center">
+        <img src="https://i.ibb.co/2jHgHxy/58577497-f6c3-4d24-817f-6464b0d3d9ab.jpg" alt="Produto Mary Kay" class="object-contain rounded-md">
       </div>
 
       <!-- Slide 3 -->
-      <div class="swiper-slide flex justify-center items-center bg-white rounded-lg shadow-md p-4">
-        <img src="https://i.ibb.co/4SPGkqC/07f1e79a-824d-4f5e-8728-f47f8f5f7dce.jpg" alt="Produto Mary Kay" class="w-full h-auto object-contain rounded-md">
+      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-center">
+        <img src="https://i.ibb.co/4SPGkqC/07f1e79a-824d-4f5e-8728-f47f8f5f7dce.jpg" alt="Produto Mary Kay" class="object-contain rounded-md">
       </div>
 
       <!-- Slide 4: Batom Líquido Matte At Play -->
-      <div class="swiper-slide flex justify-center items-center bg-white rounded-lg shadow-md p-4">
-        <img src="https://i.ibb.co/RBh1hXN/3808c3371c9f6918f58c12a0939761d8.jpg" alt="Batom Líquido Matte At Play™" class="w-full h-auto object-contain rounded-md">
-        <p class="text-lg text-red-600 mt-2">R$ 33,90</p>
+      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-center">
+        <img src="https://i.ibb.co/RBh1hXN/3808c3371c9f6918f58c12a0939761d8.jpg" alt="Batom Líquido Matte At Play™" class="object-contain rounded-md">
       </div>
 
     </div>
@@ -472,7 +471,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Código JavaScript para inicializar o Swiper -->
 <script>
   var swiper = new Swiper('.swiper-container', {
-    loop: false, // Não usar loop para que comece no primeiro slide
+    loop: false, // Desativar loop
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -481,39 +480,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 1, // Exibir um slide por vez
-    centeredSlides: false, // Desativar centralização para começar no primeiro slide
+    slidesPerView: 1, // Exibir apenas um slide por vez
+    centeredSlides: false, // Centralização manual, não automática
+    initialSlide: 0, // Começa do primeiro slide
+    spaceBetween: 0, // Remove qualquer espaço entre slides
   });
 </script>
-
-
-    <!-- Botões de Navegação -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-    <!-- Paginação -->
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
-
-<!-- Código JavaScript para inicializar o Swiper -->
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    loop: true, // Loop infinito
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    slidesPerView: 1, // Um slide visível por vez
-    spaceBetween: 10, // Espaço entre slides
-    centeredSlides: true, // Centraliza os slides
-  });
-</script>
-
 
   <!-- Botão de Comprar -->
   <div class="text-center mt-8">
