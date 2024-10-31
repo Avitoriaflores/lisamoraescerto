@@ -17,33 +17,39 @@
     .footer-credits { font-size: 0.8rem; color: #aaaaaa; }
     .section-spacing { padding-top: 2rem; } /* Espaçamento médio entre menu e seções */
     .fale-conosco {
-            text-align: justify; /* Justifica o texto */
-            margin: 40px 20px; /* Adiciona margem superior e inferior */
-            padding: 20px; /* Adiciona preenchimento interno */
-            border: 1px solid #ccc; /* Adiciona uma borda para destacar a seção */
-            border-radius: 8px; /* Borda arredondada */
-            background-color: #f9f9f9; /* Fundo claro para destacar a seção */
-        }
+    display: flex; /* Usa flexbox para criar colunas */
+    justify-content: space-between; /* Espaçamento entre as colunas */
+    margin: 40px 20px; /* Margem para a seção */
+    padding: 20px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Borda para destacar a seção */
+    border-radius: 8px; /* Borda arredondada */
+    background-color: #f9f9f9; /* Fundo claro */
+}
 
-        .fale-conosco h2 {
-            text-align: center; /* Centraliza o título */
-            margin-bottom: 20px; /* Espaço abaixo do título */
-        }
+.column {
+    flex: 1; /* Cada coluna ocupará a mesma largura */
+    min-width: 250px; /* Largura mínima para colunas */
+    margin-right: 20px; /* Espaço entre as colunas */
+}
 
-        .fale-conosco p,
-        .fale-conosco ul {
-            margin: 10px 0; /* Adiciona espaço entre parágrafos e listas */
-            padding-left: 20px; /* Adiciona preenchimento à esquerda */
-        }
+.column:last-child {
+    margin-right: 0; /* Remove a margem da última coluna */
+}
 
-        .fale-conosco ul {
-            list-style-type: none; /* Remove os marcadores da lista */
-            padding: 0; /* Remove o preenchimento padrão */
-        }
+.fale-conosco h2 {
+    text-align: center; /* Centraliza o título */
+}
 
-        .fale-conosco ul li {
-            margin-bottom: 8px; /* Espaçamento entre itens da lista */
-        }
+.fale-conosco ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 10px 0; /* Margem entre a lista e o texto */
+}
+
+.fale-conosco ul li {
+    margin-bottom: 8px; /* Espaçamento entre itens da lista */
+}
+
     </style>
     
 </head>
@@ -354,18 +360,21 @@
             <!-- Outros itens do menu -->
         </ul>
     </nav>
-
-    <!-- Seção Fale Conosco -->
-    <div id="fale-conosco" class="fale-conosco">
+<!-- Seção Fale Conosco -->
+<div id="fale-conosco" class="fale-conosco">
+    <div class="column">
         <h2>Fale Conosco</h2>
         <p><strong>Telefones:</strong></p>
         <ul>
             <li>(55) 3221-7874</li>
-            <li><strong>Celular (WhatsApp):</strong> <a href="https://api.whatsapp.com/send?phone=5555999218454&text=Oi,%20encontrei%20seu%20sal%C3%A3o%20pelo%20site,%20preciso%20de%20algumas%20informa%C3%A7%C3%B5es">55 99921-8454</a></li>
+            <li><strong>Celular (WhatsApp):</strong> <a href="https://api.whatsapp.com/send?phone=55999218454&text=Oi,%20encontrei%20seu%20sal%C3%A3o%20pelo%20site,%20preciso%20de%20algumas%20informa%C3%A7%C3%B5es">55 99921-8454</a></li>
         </ul>
         <p><strong>Endereço:</strong> Av. Rio Branco - Centro, Santa Maria - RS, 97010-421</p>
-        <p><strong>Horário de Funcionamento:</strong></p>
+    </div>
+    <div class="column">
+        <h3>Horário de Funcionamento:</h3>
         <ul>
+          
             <li><strong>Segunda-feira:</strong> 1:30 PM – 7:30 PM</li>
             <li><strong>Terça-feira:</strong> 8:30 AM – 7:30 PM</li>
             <li><strong>Quarta-feira:</strong> 8:30 AM – 7:30 PM</li>
@@ -375,6 +384,9 @@
             <li><strong>Domingo:</strong> Fechado</li>
         </ul>
     </div>
+</div>
+
+   
 </body>
 
 
