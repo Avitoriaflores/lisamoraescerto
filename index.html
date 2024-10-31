@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,9 +17,12 @@
     .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
     .footer-credits { font-size: 0.8rem; color: #aaaaaa; }
     .section-spacing { padding-top: 2rem; }
+
+    /* Ajuste para esconder o espaço cinza vazio no mobile */
     @media (max-width: 768px) {
       nav { display: none; }
       .card img { height: auto; }
+      #instagram { padding-bottom: 0; } /* Remove espaço extra no final da seção Instagram */
     }
   </style>
 </head>
@@ -317,20 +321,18 @@
       <p class="text-lg">"Com mais de 23 anos de experiência no ramo da beleza, Lisa Moraes é uma cabeleireira reconhecida por sua dedicação em elevar a autoestima e cuidar da saúde e beleza de suas clientes. Cada atendimento é pensado para trazer o melhor resultado e uma experiência única."</p>
     </div>
   </section>
-
 <!-- Seção Instagram -->
-<section id="instagram" class="py-12 px-4 bg-gray-100 text-center">
-  <a href="https://www.instagram.com/lisamoraes_/" target="_blank" class="text-3xl font-bold mb-4 block text-gray-800 hover:underline">
-    Nos siga no Instagram
-  </a>
-  <a href="https://www.instagram.com/lisamoraes_/" target="_blank" class="text-lg text-gray-600 mb-4 inline-block">
-    Lisa Moraes | @lisamoraes_
-  </a>
-  <div class="flex justify-center">
-    <!-- SnapWidget para feed do Instagram com largura responsiva e link direto -->
-    <iframe src="https://snapwidget.com/embed/1082884" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; max-width: 765px; height:510px" title="Posts from Instagram"></iframe>
-  </div>
-</section>
+  <section id="instagram" class="py-12 px-4 bg-gray-100 text-center">
+    <a href="https://www.instagram.com/lisamoraes_/" target="_blank" class="text-3xl font-bold mb-4 block text-gray-800 hover:underline">
+      Nos siga no Instagram
+    </a>
+    <a href="https://www.instagram.com/lisamoraes_/" target="_blank" class="text-lg text-gray-600 mb-4 inline-block">
+      Lisa Moraes | @lisamoraes_
+    </a>
+    <div class="flex justify-center">
+      <iframe src="https://snapwidget.com/embed/1082884" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; max-width: 765px; height:510px" title="Posts from Instagram"></iframe>
+    </div>
+  </section>
 
 
 
@@ -352,34 +354,32 @@
         </ul>
     </nav>
 <!-- Seção Fale Conosco -->
-<div id="fale-conosco" class="fale-conosco">
-    <div class="column">
-        <h2>Fale Conosco</h2>
-        <p><strong>Telefones:</strong></p>
-        <ul>
-            <li>(55) 3221-7874</li>
-            <li><strong>Celular (WhatsApp):</strong> <a href="https://api.whatsapp.com/send?phone=55999218454&text=Oi,%20encontrei%20seu%20sal%C3%A3o%20pelo%20site,%20preciso%20de%20algumas%20informa%C3%A7%C3%B5es">55 99921-8454</a></li>
-        </ul>
-        <p><strong>Endereço:</strong> Av. Rio Branco - Centro, Santa Maria - RS, 97010-421</p>
-    </div>
-    <div class="column">
-        <h3>Horário de Funcionamento:</h3>
-        <ul>
-          
-            <li><strong>Segunda-feira:</strong> 1:30 PM – 7:30 PM</li>
-            <li><strong>Terça-feira:</strong> 8:30 AM – 7:30 PM</li>
-            <li><strong>Quarta-feira:</strong> 8:30 AM – 7:30 PM</li>
-            <li><strong>Quinta-feira:</strong> 8:30 AM – 7:30 PM</li>
-            <li><strong>Sexta-feira:</strong> 8:30 AM – 7:30 PM</li>
-            <li><strong>Sábado:</strong> 8:30 AM – 7:30 PM</li>
-            <li><strong>Domingo:</strong> Fechado</li>
-        </ul>
-    </div>
-</div>
+ <section id="fale-conosco" class="py-12 px-4 bg-white text-center section-spacing">
+    <h2 class="text-3xl font-bold mb-6">Fale Conosco</h2>
+    <div class="max-w-4xl mx-auto text-left">
+      <p class="text-lg mb-4"><strong>Telefones:</strong></p>
+      <ul class="list-none space-y-2">
+        <li>(55) 3221-7874</li>
+        <li>
+          <strong>Celular (WhatsApp):</strong>
+          <a href="https://api.whatsapp.com/send?phone=55999218454&text=Oi,%20encontrei%20seu%20sal%C3%A3o%20pelo%20site,%20preciso%20de%20algumas%20informa%C3%A7%C3%B5es" class="text-blue-500 hover:underline">
+            55 99921-8454
+          </a>
+        </li>
+      </ul>
 
-   
-</body>
-
+      <p class="text-lg mt-6 mb-4"><strong>Horário de Funcionamento:</strong></p>
+      <ul class="list-none space-y-2">
+        <li><strong>Segunda-feira:</strong> 1:30 PM – 7:30 PM</li>
+        <li><strong>Terça-feira:</strong> 8:30 AM – 7:30 PM</li>
+        <li><strong>Quarta-feira:</strong> 8:30 AM – 7:30 PM</li>
+        <li><strong>Quinta-feira:</strong> 8:30 AM – 7:30 PM</li>
+        <li><strong>Sexta-feira:</strong> 8:30 AM – 7:30 PM</li>
+        <li><strong>Sábado:</strong> 8:30 AM – 7:30 PM</li>
+        <li><strong>Domingo:</strong> Fechado</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8 text-center">
