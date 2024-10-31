@@ -428,7 +428,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    
 </section>
 
- <!-- Seção Produtos Mary Kay com Carrossel -->
+<!-- Seção Produtos Mary Kay com Carrossel -->
 <section id="produtos-mary-kay" class="py-12 px-4 bg-white text-center">
   <h2 class="text-3xl font-bold mb-8">Produtos Mary Kay</h2>
 
@@ -459,6 +459,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
+
+    <!-- Botões de Navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Código JavaScript para inicializar o Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: false, // Não usar loop para que comece no primeiro slide
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1, // Exibir um slide por vez
+    centeredSlides: false, // Desativar centralização para começar no primeiro slide
+  });
+</script>
+
 
     <!-- Botões de Navegação -->
     <div class="swiper-button-next"></div>
