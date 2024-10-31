@@ -78,6 +78,103 @@
       <!-- Outras promoções continuam... -->
     </div>
   </section>
+
+  <!-- Outras seções do site seguem a partir daqui... -->
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 text-center">
+    <p>&copy; 2024 Lisa Moraes Centro de Beleza. Todos os direitos reservados.</p>
+    <p class="footer-credits">Desenvolvido por Vitória Flores</p>
+  </footer>
+</body>
+</html>
+Nesse código, o menu de navegação (<nav>) é ocultado em telas menores que 768px, ajustando o layout automaticamente.
+
+
+
+
+
+Você disse:
+deu alguma coisa errada na promocao 3 e 4
+O ChatGPT disse:
+
+Vou ajustar as seções de promoções para garantir que os elementos sejam exibidos corretamente. Aqui está o código completo com as promoções revisadas:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisa Moraes Centro de Beleza</title>
+  <link rel="icon" href="favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Quicksand', sans-serif; }
+    .header-logo { width: 120px; margin: 0 auto; display: block; }
+    .card { background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+    .footer-credits { font-size: 0.8rem; color: #aaaaaa; }
+    .section-spacing { padding-top: 2rem; }
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .card img { height: auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Menu de Navegação Fixo com Âncoras -->
+  <nav class="fixed top-0 left-0 w-full bg-gray-800 text-white py-4 shadow-lg z-50">
+    <div class="container mx-auto flex justify-center space-x-6">
+      <a href="#promocoes" class="hover:underline">Promoções</a>
+      <a href="#sobre" class="hover:underline">Quem Somos</a>
+      <a href="#servicos" class="hover:underline">Serviços</a>
+      <a href="#cuidado-profissional" class="hover:underline">Cuidado Profissional</a>
+      <a href="#produtos-mary-kay" class="hover:underline">Produtos Mary Kay</a>
+      <a href="#onde-estamos" class="hover:underline">Onde Estamos</a>
+      <a href="#fale-conosco">Fale Conosco</a>
+    </div>
+  </nav>
+  
+  <!-- Espaço médio para compensar o menu fixo -->
+  <div class="pt-24"></div>
+
+  <!-- Cabeçalho com logotipo -->
+  <header class="bg-white text-center py-10 section-spacing">
+    <img src="https://i.ibb.co/WcXm8z6/282110074-5223331797742683-453428898656537942-n.jpg" alt="Logo Lisa Moraes Centro de Beleza" class="header-logo">
+    <h1 class="text-4xl font-bold text-gray-800 mt-6">Lisa Moraes Centro de Beleza</h1>
+    <p class="text-xl text-gray-600 mt-4">Sua beleza e autoestima em primeiro lugar</p>
+  </header>
+
+  <!-- Seção Promoções -->
+  <section id="promocoes" class="py-12 px-4 bg-gray-100 section-spacing">
+    <h2 class="text-3xl font-bold text-center mb-8">Promoções</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Promoção 1 -->
+      <div class="card">
+        <img src="https://i.ibb.co/X51qbH3/biotanix-foto.jpg" alt="B∅tox Capilar + Ozonioterapia" class="w-full h-48 object-cover rounded-md">
+        <h3 class="mt-4 text-2xl font-bold">B∅tox Capilar + Ozonioterapia</h3>
+        <p class="mt-2 text-lg line-through text-gray-500">De: R$ 150,00</p>
+        <p class="text-lg text-red-600">Por: R$ 79,90</p>
+        <p class="text-sm text-gray-600">Observação: Em dinheiro ou pix para cabelos curtos e médios.</p>
+      </div>
+
+      <!-- Promoção 2 -->
+      <div class="card">
+        <div class="overflow-hidden h-48">
+          <img src="https://i.ibb.co/LrVbscH/tecnicas-de-depilacao-cera-quente-cpt.jpg" alt="Virilha completa + perianal + axilas" class="w-full object-cover rounded-md">
+        </div>
+        <h3 class="mt-4 text-2xl font-bold text-center">Virilha completa + perianal + axilas</h3>
+        <p class="mt-2 text-lg line-through text-center text-gray-500">De: R$ 105,00</p>
+        <p class="text-lg text-red-600 font-bold text-center">Por: R$ 45,00</p>
+        <p class="text-sm text-gray-600 text-center">Em dinheiro ou pix</p>
+      </div>
+
       <!-- Promoção 3 -->
       <div class="card">
         <img src="https://i.ibb.co/X8L8hKG/costas-femininas-com-cabelo-longo-e-liso-e-castanho-em-salao-de-cabeleireiro-285484-562.jpg" alt="Semidefinitiva Orgânica" class="w-full h-48 object-cover rounded-md">
@@ -89,27 +186,20 @@
 
       <!-- Promoção 4 -->
       <div class="card">
-        <img src="https://i.ibb.co/kqvR76Q/shutterstock-1662513181.jpg" alt="Bo tox Capilar" class="w-full h-48 object-cover rounded-md">
-        <h3 class="mt-4 text-2xl font-bold">Bo t∅x Capilar</h3>
+        <img src="https://i.ibb.co/kqvR76Q/shutterstock-1662513181.jpg" alt="B∅tox Capilar" class="w-full h-48 object-cover rounded-md">
+        <h3 class="mt-4 text-2xl font-bold">B∅tox Capilar</h3>
         <p class="text-lg text-red-600">R$ 124,00</p>
         <p class="text-sm text-gray-600">Observação: Em dinheiro ou pix para cabelos curtos e médios.</p>
       </div>
     </div>
+
     <!-- Botão de Agendamento -->
     <div class="text-center mt-8">
       <a href="https://api.whatsapp.com/send/?phone=5555999218454&text=Olá, vim pelo site." class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg" target="_blank">Agende pelo WhatsApp</a>
       <div class="mt-8"></div>
     </div>
   </section>
-
-  <!-- Seção Quem Sou Eu -->
-  <section id="sobre" class="py-12 px-4 bg-white section-spacing">
-    <h2 class="text-3xl font-bold text-center mb-8">Sobre Lisa Moraes</h2>
-    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center">
-      <img src="https://i.ibb.co/1JcHW9R/294868554-5432565140152680-1451578687970569749-n.jpg" alt="Lisa Moraes" class="w-64 h-64 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
-      <p class="text-lg">"Com mais de 23 anos de experiência no ramo da beleza, Lisa Moraes é uma cabeleireira reconhecida por sua dedicação em elevar a autoestima e cuidar da saúde e beleza de suas clientes. Cada atendimento é pensado para trazer o melhor resultado e uma experiência única."</p>
-    </div>
-  </section>
+ 
 <!-- Seção Serviços Oferecidos -->
 <section id="servicos" class="py-12 px-4 bg-gray-100 section-spacing">
   <h2 class="text-3xl font-bold text-center mb-8">Serviços Oferecidos</h2>
@@ -323,7 +413,14 @@
   </div>
 </section>
 
-
+ <!-- Seção Quem Sou Eu -->
+  <section id="sobre" class="py-12 px-4 bg-white section-spacing">
+    <h2 class="text-3xl font-bold text-center mb-8">Sobre Lisa Moraes</h2>
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center">
+      <img src="https://i.ibb.co/1JcHW9R/294868554-5432565140152680-1451578687970569749-n.jpg" alt="Lisa Moraes" class="w-64 h-64 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
+      <p class="text-lg">"Com mais de 23 anos de experiência no ramo da beleza, Lisa Moraes é uma cabeleireira reconhecida por sua dedicação em elevar a autoestima e cuidar da saúde e beleza de suas clientes. Cada atendimento é pensado para trazer o melhor resultado e uma experiência única."</p>
+    </div>
+  </section>
 
   <!-- Seção Instagram -->
 <section id="instagram" class="py-12 px-4 bg-gray-100 text-center">
