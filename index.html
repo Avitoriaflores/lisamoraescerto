@@ -429,24 +429,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="swiper-wrapper">
 
       <!-- Slide 1: Batom Líquido Matte At Play -->
-      <div class="swiper-slide">
-        <img src="https://i.ibb.co/RBh1hXN/3808c3371c9f6918f58c12a0939761d8.jpg" alt="Batom Líquido Matte At Play™" class="w-full h-48 object-cover rounded-md">
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="https://i.ibb.co/RBh1hXN/3808c3371c9f6918f58c12a0939761d8.jpg" alt="Batom Líquido Matte At Play™" class="max-w-xs h-auto object-contain">
         <p class="text-lg text-red-600 mt-2">R$ 33,90</p>
       </div>
 
       <!-- Slide 2 -->
-      <div class="swiper-slide">
-        <img src="https://i.ibb.co/pvhCHL5/aa2d6e6d-dc43-4021-9613-8e56d86d7e05.jpg" alt="Produto Mary Kay" class="w-full h-48 object-cover rounded-md">
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="https://i.ibb.co/pvhCHL5/aa2d6e6d-dc43-4021-9613-8e56d86d7e05.jpg" alt="Produto Mary Kay" class="max-w-xs h-auto object-contain">
       </div>
 
       <!-- Slide 3 -->
-      <div class="swiper-slide">
-        <img src="https://i.ibb.co/2jHgHxy/58577497-f6c3-4d24-817f-6464b0d3d9ab.jpg" alt="Produto Mary Kay" class="w-full h-48 object-cover rounded-md">
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="https://i.ibb.co/2jHgHxy/58577497-f6c3-4d24-817f-6464b0d3d9ab.jpg" alt="Produto Mary Kay" class="max-w-xs h-auto object-contain">
       </div>
 
       <!-- Slide 4 -->
-      <div class="swiper-slide">
-        <img src="https://i.ibb.co/4SPGkqC/07f1e79a-824d-4f5e-8728-f47f8f5f7dce.jpg" alt="Produto Mary Kay" class="w-full h-48 object-cover rounded-md">
+      <div class="swiper-slide flex justify-center items-center">
+        <img src="https://i.ibb.co/4SPGkqC/07f1e79a-824d-4f5e-8728-f47f8f5f7dce.jpg" alt="Produto Mary Kay" class="max-w-xs h-auto object-contain">
       </div>
 
     </div>
@@ -459,6 +459,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="swiper-pagination"></div>
   </div>
 </section>
+
+<!-- Código JavaScript para inicializar o Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true, // Loop infinito
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1, // Um slide visível por vez
+    spaceBetween: 20, // Espaço entre slides
+  });
+</script>
+
 
 
 
