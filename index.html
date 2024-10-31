@@ -16,7 +16,36 @@
     .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
     .footer-credits { font-size: 0.8rem; color: #aaaaaa; }
     .section-spacing { padding-top: 2rem; } /* Espaçamento médio entre menu e seções */
-  </style>
+    .fale-conosco {
+            text-align: justify; /* Justifica o texto */
+            margin: 40px 20px; /* Adiciona margem superior e inferior */
+            padding: 20px; /* Adiciona preenchimento interno */
+            border: 1px solid #ccc; /* Adiciona uma borda para destacar a seção */
+            border-radius: 8px; /* Borda arredondada */
+            background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+        }
+
+        .fale-conosco h2 {
+            text-align: center; /* Centraliza o título */
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+
+        .fale-conosco p,
+        .fale-conosco ul {
+            margin: 10px 0; /* Adiciona espaço entre parágrafos e listas */
+            padding-left: 20px; /* Adiciona preenchimento à esquerda */
+        }
+
+        .fale-conosco ul {
+            list-style-type: none; /* Remove os marcadores da lista */
+            padding: 0; /* Remove o preenchimento padrão */
+        }
+
+        .fale-conosco ul li {
+            margin-bottom: 8px; /* Espaçamento entre itens da lista */
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -317,26 +346,37 @@
     </div>
   </section>
 
-<!-- Seção Fale Conosco -->
-<div id="fale-conosco" class="fale-conosco">
-    <h2>Fale Conosco</h2>
-    <p><strong>Telefones:</strong></p>
-    <ul>
-        <li>(55) 3221-7874</li>
-        <li><strong>Celular (WhatsApp):</strong> <a href="https://api.whatsapp.com/send?phone=5555999218454&text=Oi,%20encontrei%20seu%20sal%C3%A3o%20pelo%20site,%20preciso%20de%20algumas%20informa%C3%A7%C3%B5es">55 99921-8454</a></li>
-    </ul>
-    <p><strong>Endereço:</strong> Av. Rio Branco - Centro, Santa Maria - RS, 97010-421</p>
-    <p><strong>Horário de Funcionamento:</strong></p>
-    <ul>
-        <li><strong>Quinta-feira:</strong> 8:30 AM – 7:30 PM</li>
-        <li><strong>F sexta-feira:</strong> 8:30 AM – 7:30 PM</li>
-        <li><strong>Sábado (Dia de Finados):</strong> 8:30 AM – 7:30 PM</li>
-        <li><strong>Domingo:</strong> Fechado</li>
-        <li><strong>Segunda-feira:</strong> 1:30 PM – 7:30 PM</li>
-        <li><strong>Terça-feira:</strong> 8:30 AM – 7:30 PM</li>
-        <li><strong>Quarta-feira:</strong> 8:30 AM – 7:30 PM</li>
-    </ul>
-</div>
+<body>
+    <!-- Menu Fixado -->
+    <nav>
+        <ul>
+            <li><a href="#fale-conosco">Fale Conosco</a></li>
+            <!-- Outros itens do menu -->
+        </ul>
+    </nav>
+
+    <!-- Seção Fale Conosco -->
+    <div id="fale-conosco" class="fale-conosco">
+        <h2>Fale Conosco</h2>
+        <p><strong>Telefones:</strong></p>
+        <ul>
+            <li>(55) 3221-7874</li>
+            <li><strong>Celular (WhatsApp):</strong> <a href="https://api.whatsapp.com/send?phone=5555999218454&text=Oi,%20encontrei%20seu%20sal%C3%A3o%20pelo%20site,%20preciso%20de%20algumas%20informa%C3%A7%C3%B5es">55 99921-8454</a></li>
+        </ul>
+        <p><strong>Endereço:</strong> Av. Rio Branco - Centro, Santa Maria - RS, 97010-421</p>
+        <p><strong>Horário de Funcionamento:</strong></p>
+        <ul>
+            <li><strong>Segunda-feira:</strong> 1:30 PM – 7:30 PM</li>
+            <li><strong>Terça-feira:</strong> 8:30 AM – 7:30 PM</li>
+            <li><strong>Quarta-feira:</strong> 8:30 AM – 7:30 PM</li>
+            <li><strong>Quinta-feira:</strong> 8:30 AM – 7:30 PM</li>
+            <li><strong>Sexta-feira:</strong> 8:30 AM – 7:30 PM</li>
+            <li><strong>Sábado:</strong> 8:30 AM – 7:30 PM</li>
+            <li><strong>Domingo:</strong> Fechado</li>
+        </ul>
+    </div>
+</body>
+
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-8 text-center">
