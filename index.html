@@ -484,34 +484,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- Seção Produtos Mary Kay com Carrossel -->
-<section id="produtos-mary-kay" class="py-12 px-4 bg-white text-center">
-  <h2 class="text-3xl font-bold mb-8">Produtos Mary Kay</h2>
+<section id="produtos-mary-kay" class="py-12 px-4 bg-white text-left">
+  <h2 class="text-3xl font-bold mb-8 text-center">Produtos Mary Kay</h2>
 
-  <!-- Container do Swiper com justificação -->
+  <!-- Container do Swiper -->
   <div class="swiper-container mx-auto" style="width: 300px;">
     <!-- Wrapper para os Slides -->
     <div class="swiper-wrapper">
-
       <!-- Slide 1 -->
-      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-start">
+      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-center">
         <img src="https://i.ibb.co/pvhCHL5/aa2d6e6d-dc43-4021-9613-8e56d86d7e05.jpg" alt="Produto Mary Kay" class="object-contain rounded-md">
       </div>
 
       <!-- Slide 2 -->
-      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-start">
+      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-center">
         <img src="https://i.ibb.co/2jHgHxy/58577497-f6c3-4d24-817f-6464b0d3d9ab.jpg" alt="Produto Mary Kay" class="object-contain rounded-md">
       </div>
 
       <!-- Slide 3 -->
-      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-start">
+      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-center">
         <img src="https://i.ibb.co/4SPGkqC/07f1e79a-824d-4f5e-8728-f47f8f5f7dce.jpg" alt="Produto Mary Kay" class="object-contain rounded-md">
       </div>
 
       <!-- Slide 4: Batom Líquido Matte At Play -->
-      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-start">
+      <div class="swiper-slide bg-white rounded-lg shadow-md p-4 flex justify-center">
         <img src="https://i.ibb.co/RBh1hXN/3808c3371c9f6918f58c12a0939761d8.jpg" alt="Batom Líquido Matte At Play™" class="object-contain rounded-md">
       </div>
-
     </div>
 
     <!-- Botões de Navegação -->
@@ -521,14 +519,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Paginação -->
     <div class="swiper-pagination"></div>
   </div>
-
-  <!-- Botão de Comprar para Mary Kay -->
-  <div class="text-center mt-8">
-    <a href="https://api.whatsapp.com/send/?phone=5555999218454&text=Olá, vim pelo site, tenho interesse em produtos Mary Kay." class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg text-lg" target="_blank">Quero comprar Mary Kay</a>
-    <!-- Espaço extra após o botão -->
-    <div class="mt-8"></div>
-  </div>
 </section>
+
+<!-- Código JavaScript para inicializar o Swiper com setas de navegação -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true, // Loop infinito
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1,
+    centeredSlides: true,
+  });
+</script>
 
 
  <!-- Seção Instagram -->
