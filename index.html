@@ -128,6 +128,13 @@ src="https://www.facebook.com/tr?id=534400589526822&ev=PageView&noscript=1"
     <img src="https://i.ibb.co/WcXm8z6/282110074-5223331797742683-453428898656537942-n.jpg" alt="Logo Lisa Moraes Centro de Beleza" class="header-logo">
     <h1 class="text-4xl font-bold text-gray-800 mt-6">Lisa Moraes Centro de Beleza</h1>
     <p class="text-xl text-gray-600 mt-4">Sua beleza e autoestima em primeiro lugar</p>
+
+   <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   </header>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -412,21 +419,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- Seção Produtos Mary Kay -->
-<section id="produtos-mary-kay" class="py-12 px-4 bg-white">
-  <h2 class="text-3xl font-bold text-center mb-8">Produtos Mary Kay</h2>
-  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Seção Produtos Mary Kay com Carrossel -->
+<section id="produtos-mary-kay" class="py-12 px-4 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-8">Produtos Mary Kay</h2>
 
-    <!-- Produto Mary Kay: Batom Líquido Matte At Play -->
-    <div class="card bg-gray-100 p-6 rounded-lg shadow-lg">
-      <img src="https://i.ibb.co/RBh1hXN/3808c3371c9f6918f58c12a0939761d8.jpg" alt="Batom Líquido Matte At Play™" class="w-full h-48 object-cover rounded-md">
-      <h3 class="mt-4 text-2xl font-bold">Batom Líquido Matte At Play™</h3>
-      <p class="text-lg text-red-600">R$ 33,90</p>
-      <p class="text-sm text-gray-600">Batom líquido matte de longa duração, disponível em diversas cores. Consulte para opções.</p>
+  <!-- Container do Swiper -->
+  <div class="swiper-container">
+    <!-- Wrapper para os Slides -->
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1: Batom Líquido Matte At Play -->
+      <div class="swiper-slide">
+        <img src="https://i.ibb.co/RBh1hXN/3808c3371c9f6918f58c12a0939761d8.jpg" alt="Batom Líquido Matte At Play™" class="w-full h-48 object-cover rounded-md">
+        <p class="text-lg text-red-600 mt-2">R$ 33,90</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="https://i.ibb.co/pvhCHL5/aa2d6e6d-dc43-4021-9613-8e56d86d7e05.jpg" alt="Produto Mary Kay" class="w-full h-48 object-cover rounded-md">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img src="https://i.ibb.co/2jHgHxy/58577497-f6c3-4d24-817f-6464b0d3d9ab.jpg" alt="Produto Mary Kay" class="w-full h-48 object-cover rounded-md">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <img src="https://i.ibb.co/4SPGkqC/07f1e79a-824d-4f5e-8728-f47f8f5f7dce.jpg" alt="Produto Mary Kay" class="w-full h-48 object-cover rounded-md">
+      </div>
+
     </div>
 
+    <!-- Botões de Navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
   </div>
 </section>
+
 
 
 
@@ -523,6 +556,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>&copy; 2024 Lisa Moraes Centro de Beleza. Todos os direitos reservados.</p>
     <p class="footer-credits">Desenvolvido por Vitória Flores</p>
   </footer>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true, // Loop infinito
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1, // Ajuste conforme o layout
+    spaceBetween: 10, // Espaçamento entre slides
+  });
+</script>
 
 </body>
 </html>
